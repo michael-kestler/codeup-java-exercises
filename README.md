@@ -1,1 +1,4 @@
-# codeup-java-exercises-example
+
+# codeup-java-exercises
+Java Exercises
+
