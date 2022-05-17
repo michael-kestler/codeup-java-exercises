@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 //    int i = 5;
@@ -34,18 +36,34 @@ public class ControlFlowExercises {
 
         //fizzbuzz exercise
 
-        for(int i = 1; i <= 100; i++){
-            if(((i % 3) == 0) && ((i % 5) == 0)) //Is it a multiple of 3 & 5
-                System.out.println("FizzBuzz");
-            else if ((i % 3) == 0) // is it a multiple of 3
-                System.out.println("Fizz");
-            else if ((i % 5) == 0) //is it a multiple of 5
-                System.out.println("Buzz");
-            else
-                System.out.println(i); //not a multiple of 3 or 5
+//        for(int i = 1; i <= 100; i++){
+//            if(((i % 3) == 0) && ((i % 5) == 0)) //Is it a multiple of 3 & 5
+//                System.out.println("FizzBuzz");
+//            else if ((i % 3) == 0) // is it a multiple of 3
+//                System.out.println("Fizz");
+//            else if ((i % 5) == 0) //is it a multiple of 5
+//                System.out.println("Buzz");
+//            else
+//                System.out.println(i); //not a multiple of 3 or 5
+//        }
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int userInput = sc.nextInt();
+
+        System.out.println("number | " + " " + "squared | " + " " + "cubed |");
+        System.out.println(" ------"    + " " + "   ------- "    + " " + "------");
+
+        for(int i = 1; i <=userInput; i++){
+//            i = userInput;
+            int numberSquared = (int) Math.pow(i, 2);
+            int numberCubed = (int) Math.pow(i, 3);
+
+            String message = "\n" + i +"    |     " + numberSquared  + "  |         " + numberCubed + " |";
+
+            System.out.println(message);
+            System.out.println();
         }
-
 
     }
 }
