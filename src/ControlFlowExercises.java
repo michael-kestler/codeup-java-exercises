@@ -23,10 +23,14 @@ public class ControlFlowExercises {
 //            }while(i<=1000000);
 
         //print by 5 backwards from 100 to -10
-        for(int i = 100; i<=100 && i>=-10; i-=5){
+//        for(int i = 100; i<=100 && i>=-10; i-=5){
+//            System.out.println(i);
+//        }
+
+        //print squares of 2 less than 1,000,000
+        for(long i = 2; i<=1000000; i*=i){
             System.out.println(i);
         }
-
 
     }
 }
