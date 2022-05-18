@@ -47,23 +47,51 @@ public class ControlFlowExercises {
 //                System.out.println(i); //not a multiple of 3 or 5
 //        }
 
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter an integer: ");
+//        int userInput = sc.nextInt();
+//
+//        System.out.println("number | " + " " + "squared | " + " " + "cubed |");
+//        System.out.println(" ------"    + " " + "   ------- "    + " " + "------");
+//
+//        for(int i = 1; i <=userInput; i++){
+////            i = userInput;
+//            int numberSquared = (int) Math.pow(i, 2);
+//            int numberCubed = (int) Math.pow(i, 3);
+//
+//            String message = "\n" + i +"    |     " + numberSquared  + "  |         " + numberCubed + " |";
+//
+//            System.out.println(message);
+//            System.out.println();
+//        }
+
+
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter an integer: ");
+        System.out.print("Enter numerical grade");
         int userInput = sc.nextInt();
 
-        System.out.println("number | " + " " + "squared | " + " " + "cubed |");
-        System.out.println(" ------"    + " " + "   ------- "    + " " + "------");
-
-        for(int i = 1; i <=userInput; i++){
-//            i = userInput;
-            int numberSquared = (int) Math.pow(i, 2);
-            int numberCubed = (int) Math.pow(i, 3);
-
-            String message = "\n" + i +"    |     " + numberSquared  + "  |         " + numberCubed + " |";
-
-            System.out.println(message);
-            System.out.println();
+        switch ((88 <= userInput && userInput <= 100 ) ? 0 :
+                (80 <= userInput && userInput <= 87) ? 1 :
+                        (70 <= userInput && userInput <= 79) ? 2 :
+                                (60 <= userInput && userInput <= 67) ? 3 : 4)
+         {
+            case 0:
+               System.out.println("Your grade is A");
+                break;
+            case 1:
+                System.out.println("Your grade is B");
+                break;
+            case 2:
+                System.out.println("Your grade is C");
+                break;
+            case 3:
+                System.out.println("Your grade is D");
+                break;
+            default:
+                System.out.println("You got an F loser");
+                break;
         }
+
 
     }
 }
