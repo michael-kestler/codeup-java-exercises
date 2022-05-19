@@ -65,18 +65,18 @@ public class ControlFlowExercises {
 //            System.out.println();
 //        }
 
-
+    while (true) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter numerical grade");
         int userInput = sc.nextInt();
 
-        switch ((88 <= userInput && userInput <= 100 ) ? 0 :
+
+        switch ((88 <= userInput && userInput <= 100) ? 0 :
                 (80 <= userInput && userInput <= 87) ? 1 :
                         (70 <= userInput && userInput <= 79) ? 2 :
-                                (60 <= userInput && userInput <= 67) ? 3 : 4)
-         {
+                                (60 <= userInput && userInput <= 67) ? 3 : 4) {
             case 0:
-               System.out.println("Your grade is A");
+                System.out.println("Your grade is A");
                 break;
             case 1:
                 System.out.println("Your grade is B");
@@ -87,11 +87,16 @@ public class ControlFlowExercises {
             case 3:
                 System.out.println("Your grade is D");
                 break;
-            default:
+            case 4:
                 System.out.println("You got an F loser");
                 break;
+            case 5:
         }
-
-
+        System.out.print("Continue? [y/N] ");
+        String goAgain = sc.next();
+        if (!goAgain.equals("y")) {
+            break;
+        }
+    }
     }
 }
