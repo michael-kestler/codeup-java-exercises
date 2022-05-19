@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
     public static int addNumbers(int a, int b) {
         // return value
@@ -14,6 +16,17 @@ public class MethodsExercises {
 
     public static int divideNumbers(int a, int b){
         return a / b;
+    }
+
+    public static int getInteger(int min, int max){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number between "+min+" and "+max+" :");
+        int userInput = sc.nextInt();
+        if (userInput >= min && userInput <=max){
+             return userInput;
+
+        }
+        return getInteger(25, 100);
     }
 
 
@@ -37,7 +50,7 @@ public class MethodsExercises {
         System.out.println(divideNumbers(num5, num4));
 
 
-
+        getInteger(15, 35);
 
 
 

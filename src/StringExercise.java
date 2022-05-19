@@ -2,7 +2,10 @@ import java.util.Scanner;
 
 public class StringExercise {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("We don't need no education");
+        String message = "We don't need no";
+        message = message + " education";
+        System.out.println(message);
+        message = message + " thought control";
+        System.out.println(message);
     }
 }
