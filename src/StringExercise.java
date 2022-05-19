@@ -9,6 +9,11 @@ public class StringExercise {
         System.out.println(message);
 
         String message2 = "Check \"this\" out!, \"s inside of \"s!";
-        System.out.print(message2);
+        System.out.println(message2);
+
+        String message3 = "In windows, the main drive is usually C:\\";
+        System.out.println(message3);
+
+
     }
 }
