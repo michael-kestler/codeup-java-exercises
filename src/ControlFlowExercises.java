@@ -67,7 +67,7 @@ public class ControlFlowExercises {
 
     while (true) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter numerical grade");
+        System.out.print("Enter numerical grade: ");
         int userInput = sc.nextInt();
 
 
