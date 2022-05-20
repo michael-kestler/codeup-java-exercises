@@ -1,5 +1,11 @@
 package util;
 
-public class Input {
+public class Input{
+
+    private String scanner;
+
+    public String getString(){
+            return scanner;
     }
 
+}
