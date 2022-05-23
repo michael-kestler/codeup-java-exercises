@@ -8,6 +8,9 @@ public class InputTest {
 
         System.out.println(sc1.getString());
 
+        System.out.println(sc1.yesNo());
+
+        System.out.println(sc1.getInt(25, 100));
 
 
 //        Input input1 = new Input()

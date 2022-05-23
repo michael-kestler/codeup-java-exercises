@@ -4,13 +4,30 @@ import java.util.Scanner;
 
 public class Input {
 
-        private Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
 
-     public String getString() {
+    public String getString() {
         System.out.print("Enter data: ");
         return scanner.nextLine();
     }
+
+    public boolean yesNo() {
+        System.out.print("Enter yes or no: ");
+        if (scanner.nextLine().equals("yes")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int getInt(int min, int max) {
+        System.out.print("Enter a number between " + min + " and " + max + " :");
+        if (scanner.nextInt() >= min && scanner.nextInt() <= max) {
+            return scanner.nextInt();
+        } else {
+            return min;
+        }
 
 
 //    public boolean yesNo() {
@@ -35,8 +52,9 @@ public class Input {
 //        }
 //
 
-    }
 
+    }
+}
 
 
 
