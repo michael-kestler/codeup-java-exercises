@@ -21,14 +21,19 @@ public class Input {
         }
     }
 
-    public int getInt(int min, int max) {
-        System.out.print("Enter a number between " + min + " and " + max + " :");
-        if (scanner.nextInt() >= min && scanner.nextInt() <= max) {
-            return scanner.nextInt();
-        } else {
-            return min;
-        }
 
+    public int getInt(int min, int max) {
+        while (true) {
+            System.out.print("Enter a number between " + min + " and " + max + " :");
+            if (scanner.nextInt() < min || scanner.nextInt() > max) {
+                System.out.println("Invalid entry, Enter a number between " + min + " and " + max + " :");
+                return scanner.nextInt();
+            } else {
+                break;
+            }
+        }
+        return scanner.nextInt();
+    }
 
 //    public boolean yesNo() {
 //        return Objects.equals(scanner.nextLine(), "yes");
@@ -54,7 +59,7 @@ public class Input {
 
 
     }
-}
+
 
 
 
