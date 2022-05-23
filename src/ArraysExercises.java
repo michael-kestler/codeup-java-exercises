@@ -5,6 +5,14 @@ public class ArraysExercises {
         // need to convert to string in order to display
         // the result
 
+        //create an array that holds 3 Person objects
+
+        String[] person;
+
+        person = new String[3];
+
+
+
 
 
     }
