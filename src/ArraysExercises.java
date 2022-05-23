@@ -22,4 +22,9 @@ public class ArraysExercises {
         }
 
     }
+    public static void addPerson (Integer[] intArray){
+
+
+    }
+
 }
