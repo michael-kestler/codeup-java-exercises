@@ -10,14 +10,16 @@ public class ArraysExercises {
         String[] person;
 
         person = new String[3];
-        
+
         person[0] = "Ricky Bobby";
         person[1] = "Cal Norton Jr";
         person[2] = "Jean Girard";
 
+        for (int i = 0; i < person.length; i += 1) {
+            System.out.println(person[i]);
 
 
+        }
 
     }
-
 }
