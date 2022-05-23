@@ -12,10 +12,12 @@ public class MotorBikeRunner {
         honda.start();
 
         ducati.setSpeed(100);
-        honda.setSpeed(80);  //changing state of the object
+        System.out.println(ducati.getSpeed());
 
-        ducati.setSpeed(20);
-        honda.setSpeed(0);  //state of any object can keep changing
+        honda.setSpeed(80);  //changing state of the object
+        System.out.println(honda.getSpeed());
+
+
 
     }
 }
