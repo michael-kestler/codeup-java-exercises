@@ -1,6 +1,9 @@
 package shapes;
 
 public class Square extends Rectangle {
+    protected double width;
+    protected double length;
+
         public Square (double side) {
             set(side, side);
         };

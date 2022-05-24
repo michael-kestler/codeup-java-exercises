@@ -21,21 +21,21 @@ public class ArraysExercises {
 
 
         }
-    public static arraycopy void addPerson(
+//    public static arraycopy void addPerson(
+//
+//    String [] args) {
+//        String [] arr1 = new String[3];
+//        String [] arr2 = new String [1];
+//        String [] copyFrom = arr1;
+//
+//        String [] copyTo = arr2;
+//
+//        System.out.print(addPerson[]);
 
-    String [] args) {
-        String [] arr1 = new String[3];
-        String [] arr2 = new String [1];
-        String [] copyFrom = arr1;
-
-        String [] copyTo = arr2;
-
-        System.out.print(addPerson[]);
 
 
-
-    }
 }
+
 
 
 
