@@ -17,14 +17,25 @@ public class ArraysExercises {
 
         for (int i = 0; i < person.length; i += 1) {
             System.out.println(person[i]);
+        }
 
 
         }
+    public static arraycopy void addPerson(
+
+    String [] args) {
+        String [] arr1 = new String[3];
+        String [] arr2 = new String [1];
+        String [] copyFrom = arr1;
+
+        String [] copyTo = arr2;
+
+        System.out.print(addPerson[]);
+
+
 
     }
-    public static void addPerson (Integer[] intArray){
-
-
-    }
-
 }
+
+
+
