@@ -2,26 +2,29 @@ package shapes;
 
 public class Square extends Rectangle {
 
-    public double side;
 
-
-
-    Square() {
-        this.side = 5;
-//        Rectangle(side, side);
-    }
-
-
-
-
-    public double getArea() {
-        return side * side;
-    }
-
-    public double getPerimeter() {
-        return (4 * side);
-    }
 }
+
+//    public double side;
+//
+//
+//
+//    Square() {
+//        this.side = 5;
+//        Rectangle(side, side);
+//    }
+//
+//
+//
+//
+//    public double getArea() {
+//        return side * side;
+//    }
+//
+//    public double getPerimeter() {
+//        return (4 * side);
+//    }
+//}
 
 
 
