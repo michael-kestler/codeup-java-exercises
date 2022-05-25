@@ -4,9 +4,12 @@ public class Square extends Rectangle {
     protected double width;
     protected double length;
 
-        public Square (double side) {
-            set(side, side);
-        };
+//        public void set2(double side){
+//            return set(side, side);
+//
+//        }
+
+
 
 }
 

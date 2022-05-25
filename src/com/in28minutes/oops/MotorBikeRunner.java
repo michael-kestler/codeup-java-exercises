@@ -3,22 +3,33 @@ package com.in28minutes.oops;
 public class MotorBikeRunner {
 
     public static void main(String[] args) {
-        MotorBike ducati = new MotorBike(); //instance
-        MotorBike honda  = new MotorBike(); //instance
+        MotorBike ducati = new MotorBike(100); //instance
+        MotorBike honda  = new MotorBike(200); //instance
 
 
 
         ducati.start(); //methods
         honda.start();
 
-        ducati.setSpeed(100);
+//        ducati.setSpeed(100);
+//
+//        ducati.increaseSpeed(100);
+//        ducati.decreaseSpeed(50);
+//
+//        honda.increaseSpeed(100);
+//        honda.decreaseSpeed(50);
+
+
+//        int ducatiSpeed = ducati.getSpeed();//get speed
+//        ducatiSpeed = ducatiSpeed + 100;//increase it by 100
+//        ducati.setSpeed(ducatiSpeed);//set it to ducati
+//
+//        int hondaSpeed = honda.getSpeed();//get speed
+//        hondaSpeed = hondaSpeed + 100;//increase it by 100
+//        honda.setSpeed(hondaSpeed);//set it to ducat
+
         System.out.println(ducati.getSpeed());
-
-        honda.setSpeed(80);  //changing state of the object
         System.out.println(honda.getSpeed());
-
-
-
     }
 }
 
