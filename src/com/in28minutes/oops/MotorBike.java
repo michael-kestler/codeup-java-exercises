@@ -12,6 +12,10 @@ public class MotorBike {
     //outputs - void
     //name - setSpeed
 
+    MotorBike(){
+        this(5);//no argument constructor - it calls the constructor below.
+    }
+
     MotorBike(int speed){
         this.speed = speed;
     }//constructor
