@@ -23,6 +23,11 @@ public abstract class Quadrilateral extends Shape {
 
     //abstract methods for setting length and width
 
+    public abstract double setLength ();
+
+    public abstract double setWidth();
+
+
 
 
 
