@@ -4,7 +4,7 @@ public class Rectangle {
     protected double width;
     protected double length;
 
-    public void set(double l, double w) {
+    public void Rectangle(double l, double w) {
         length = l;
         width = w;
     }

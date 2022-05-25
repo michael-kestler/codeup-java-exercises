@@ -4,15 +4,14 @@ public class Square extends Rectangle {
 
     public double side;
 
-    Square(double side) {
-        this.side = side;
 
-    }
 
-    Square(){
+    Square() {
         this.side = 5;
-
+//        Rectangle(side, side);
     }
+
+
 
 
     public double getArea() {
