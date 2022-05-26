@@ -12,7 +12,7 @@ public class Student {
     }
 
 
-    ArrayList<Integer>  grades = new ArrayList<>();
+    private ArrayList<Integer>  grades = new ArrayList<>();
 
     // returns the student's name
     public String getName() {
@@ -20,13 +20,18 @@ public class Student {
     }
 
     // adds the given grade to the grades property
-    public void addGrade(int grade){
-        return grades;
-    }
+//    public addGrade(int grade){
+//       return grades.add()
+//    }
     // returns the average of the students grades
     public double getGradeAverage(){
-        return grades/grades.size;
+        int sum = 0;
+        for (int i: grades) {
+            sum += i;
+        }
+        return sum/(grades.size());
     }
+
 
 
 
