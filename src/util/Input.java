@@ -3,7 +3,7 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-
+    //create a private field named scanner
     private Scanner scanner = new Scanner(System.in);
 
 
