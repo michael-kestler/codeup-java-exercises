@@ -9,12 +9,11 @@ public class SimpleInterestCalculator {
 
     public SimpleInterestCalculator(String principal, String interest) {
         this.principal = new BigDecimal(principal);
-        this.interest = new BigDecimal(interest);
+        this.interest = new BigDecimal(interest).divide(new BigDecimal(100));
     }
 
     public BigDecimal calculateTotalValue(int years){
-        BigDecimal totalValue =
-                principal.add(principal).add(principal.multiply(interest).multiply(BigDecimal.valueOf(years)));
-        return totalValue;
+        BigDecimal yearsBigDecimal = new BigDecimal(years);
+        return principal.add(principal.multiply(interest).multiply(yearsBigDecimal));
     }
 }
