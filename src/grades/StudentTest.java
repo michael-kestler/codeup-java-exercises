@@ -7,5 +7,8 @@ public class StudentTest {
         ArrayList<Integer> grades1 = new ArrayList();
 
 //        grades1.grades =
+
+
+
     }
 }
