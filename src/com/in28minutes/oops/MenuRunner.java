@@ -8,7 +8,32 @@ public class MenuRunner {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Number1: ");
         int number1 = scanner.nextInt();
-        System.out.println("The number you entered is - " + number1);
+//        System.out.println("The number you entered is - " + number1);
+
+//        Scanner scanner2 = new Scanner(System.in);
+        System.out.println("Enter Number2: ");
+        int number2 = scanner.nextInt();
+        System.out.println("1 - Add");
+        System.out.println("2 - Subtract");
+        System.out.println("3 - Divide");
+//        Scanner scanner3 = new Scanner(System.in);
+        System.out.println("4 - Multiply");
+        System.out.println("Choose Operation: ");
+        int chooseOperation = scanner.nextInt();
+
+        if (chooseOperation == 1){
+            System.out.println("Result is - " + number1 + number2);
+        } else if (chooseOperation == 2) {
+            System.out.println("Result is - " + (number1 - number2));
+        } else if (chooseOperation == 3) {
+            System.out.println("Result is - " + number1 / number2);
+        } else {
+            System.out.println("Result is - " + number1 * number2);
+
+
+        }
+
+
     }
 
 
