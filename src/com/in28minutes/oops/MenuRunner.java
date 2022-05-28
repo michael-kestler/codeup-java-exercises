@@ -27,8 +27,10 @@ public class MenuRunner {
             System.out.println("Result is - " + (number1 - number2));
         } else if (chooseOperation == 3) {
             System.out.println("Result is - " + number1 / number2);
-        } else {
+        } else if (chooseOperation == 4) {
             System.out.println("Result is - " + number1 * number2);
+        } else {
+            System.out.println("Invalid Operation");
 
 
         }
