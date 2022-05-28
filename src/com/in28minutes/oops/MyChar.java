@@ -9,6 +9,18 @@ public class MyChar {
         this.ch = ch;
     }
 
+    public static void printLowerCaseAlphabets() {
+        for (char ch = 'a'; ch <= 'z'; ch++){
+            System.out.println(ch);
+        }
+    }
+
+    public static void printUpperCaseAlphabets() {
+        for (char ch = 'A'; ch<= 'Z'; ch++){
+            System.out.println(ch);
+        }
+    }
+
 
     public boolean isVowel() {
         //a e i o u or A E I O U
@@ -38,7 +50,8 @@ public class MyChar {
     }
 
     public boolean isConsonant(){
-        if (isVowel() == false && isDigit() == false){
+//        if (isVowel() == false && isAlphabet() == true){
+        if(isAlphabet() && !isVowel()){
             return true;
         } return false;
     }
