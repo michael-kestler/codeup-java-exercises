@@ -21,19 +21,31 @@ public class MenuRunner {
         System.out.println("Choose Operation: ");
         int chooseOperation = scanner.nextInt();
 
-        if (chooseOperation == 1){
-            System.out.println("Result is - " + number1 + number2);
-        } else if (chooseOperation == 2) {
-            System.out.println("Result is - " + (number1 - number2));
-        } else if (chooseOperation == 3) {
-            System.out.println("Result is - " + number1 / number2);
-        } else if (chooseOperation == 4) {
-            System.out.println("Result is - " + number1 * number2);
-        } else {
-            System.out.println("Invalid Operation");
-
-
+        switch(chooseOperation){
+            case 1 : System.out.println("Result is - " + number1 + number2);
+            break;
+            case 2 : System.out.println("Result is - " + (number1 - number2));
+            break;
+            case 3 : System.out.println("Result is - " + number1 / number2);
+            break;
+            case 4 : System.out.println("Result is - " + number1 * number2);
+            break;
+            default: System.out.println("Invalid Operation");
         }
+
+//        if (chooseOperation == 1){
+//            System.out.println("Result is - " + number1 + number2);
+//        } else if (chooseOperation == 2) {
+//            System.out.println("Result is - " + (number1 - number2));
+//        } else if (chooseOperation == 3) {
+//            System.out.println("Result is - " + number1 / number2);
+//        } else if (chooseOperation == 4) {
+//            System.out.println("Result is - " + number1 * number2);
+//        } else {
+//            System.out.println("Invalid Operation");
+//
+//
+//        }
 
 
     }
