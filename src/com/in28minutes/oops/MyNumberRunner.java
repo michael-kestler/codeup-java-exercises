@@ -2,7 +2,7 @@ package com.in28minutes.oops;
 
 public class MyNumberRunner {
     public static void main(String[] args) {
-        MyNumber number = new MyNumber(9);
+        MyNumber number = new MyNumber(5);
 
 
         boolean isPrime = number.isPrime();
@@ -11,6 +11,13 @@ public class MyNumberRunner {
 
         int sum = number.sumUptoN();
         System.out.println("sumUptoN " + sum);
+
+        int sumOfDivisors = number.sumOfDivisors();
+        System.out.println("sumOfDivisors " + sumOfDivisors);
+
+        number.printANumberTriangle();
+
+
 
 
     }
