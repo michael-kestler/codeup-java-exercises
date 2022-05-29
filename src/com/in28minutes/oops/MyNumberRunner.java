@@ -9,6 +9,10 @@ public class MyNumberRunner {
         System.out.println("isPrime " + isPrime);
 
 
+        int sum = number.sumUptoN();
+        System.out.println("sumUptoN " + sum);
+
+
     }
 
 
