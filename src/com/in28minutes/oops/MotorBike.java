@@ -5,7 +5,12 @@ public class MotorBike {
     //MotorBike is acting as a template
     //objects have
     //state
-    private int speed; //instance variable
+    private int speed; //instance variable - state of an object - state can change
+    //state changes happen through methods below and methods are called the behavior of the object
+    //when designing class we need to decide "what is the state?
+    //what are the constructors?
+    //what is the behavior? what methods do you need to act on the state?
+
     //behavior
     //method
     //inputs - int speed
