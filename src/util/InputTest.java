@@ -12,10 +12,10 @@ public class InputTest {
         Input sc5 = new Input();
 
         System.out.println(sc1.getString());
-        System.out.println(sc2.yesNo());
+//        System.out.println(sc2.yesNo());
         System.out.println(sc3.getInt(25, 50));
-        System.out.println(sc4.getDouble(3.14, 7.22));
-        System.out.println(sc5.getDouble());
+        System.out.println(sc4.getDouble(25.22, 49.14));
+//        System.out.println(sc5.getDouble());
 
 
 
