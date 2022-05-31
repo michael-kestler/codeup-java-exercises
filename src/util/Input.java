@@ -3,9 +3,13 @@ package util;
 import java.util.Scanner;
 
 public class Input {
+
     //create a private field named scanner
     private Scanner scanner = new Scanner(System.in);
 
+    public Input(Scanner scanner) {
+        this.scanner = scanner;
+    }
 
     public String getString() {
         System.out.print("Enter data: ");
@@ -20,8 +24,6 @@ public class Input {
             return false;
         }
     }
-
-
     public int getInt(int min, int max) {
         while (true) {
             System.out.print("Enter a number between " + min + " and " + max + " :");
@@ -34,6 +36,11 @@ public class Input {
         }
         return scanner.nextInt();
     }
+
+
+}
+
+
 
 //    public boolean yesNo() {
 //        return Objects.equals(scanner.nextLine(), "yes");
@@ -58,7 +65,7 @@ public class Input {
 //
 
 
-    }
+
 
 
 
