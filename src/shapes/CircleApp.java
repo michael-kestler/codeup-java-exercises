@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class CircleApp {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Circle circle = new Circle(scanner.nextInt());
+//        Scanner scanner = new Scanner(System.in);
+//        Circle circle = new Circle(scanner.nextInt());
 
 //        System.out.println(circle);
 

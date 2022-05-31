@@ -7,7 +7,7 @@ public class Input {
     //create a private field named scanner
     private Scanner scanner = new Scanner(System.in);
 
-    public Input(Scanner scanner) {
+    public Input() {
         this.scanner = scanner;
     }
 
@@ -24,28 +24,29 @@ public class Input {
             return false;
         }
     }
-
-    public int getInt(int min, int max) {
-        System.out.print("Enter a number between " + min + " and " + max + " :");
-        int i = scanner.nextInt();
-        while (true) {
-            if (i > min && i < max) {
-                System.out.println("Your number is " + i);
-
-            } else if
-            (i < min || i > max) {
-                System.out.println("Invalid entry, Enter a number between " + min + " and " + max + " :");
-
-            } else {
-                break;
-            }
-        }
-        {
-
-        }
-            return i;
-    }
 }
+
+//    public int getInt(int min, int max) {
+//        System.out.print("Enter a number between " + min + " and " + max + " :");
+//        int i = scanner.nextInt();
+//        while (true) {
+//            if (i > min && i < max) {
+//                System.out.println("Your number is " + i);
+//
+//            } else if
+//            (i < min || i > max) {
+//                System.out.println("Invalid entry, Enter a number between " + min + " and " + max + " :");
+//
+//            } else {
+//                break;
+//            }
+//        }
+//        {
+//
+//        }
+//            return i;
+//    }
+//}
 
 
 //    public boolean yesNo() {

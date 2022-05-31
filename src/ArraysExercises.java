@@ -7,6 +7,8 @@ public class ArraysExercises {
 
         //create an array that holds 3 Person objects
 
+
+
         String[] person;
 
         person = new String[3];
@@ -21,6 +23,16 @@ public class ArraysExercises {
 
 
         }
+
+
+//       public static void addPerson(String [] Person, String [] newPerson){
+//            String [] copyFrom = Person;
+//            String [] copyTo = newPerson;
+//           System.out.println(addPerson(["Joe, John, James"]), ["Jerry"];);
+//        }
+//
+
+
 //    public static arraycopy void addPerson(
 //
 //    String [] args) {
