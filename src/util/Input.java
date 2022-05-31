@@ -24,22 +24,28 @@ public class Input {
             return false;
         }
     }
+
     public int getInt(int min, int max) {
+        System.out.print("Enter a number between " + min + " and " + max + " :");
+        int i = scanner.nextInt();
         while (true) {
-            System.out.print("Enter a number between " + min + " and " + max + " :");
-            if (scanner.nextInt() < min || scanner.nextInt() > max) {
+            if (i > min && i < max) {
+                System.out.println("Your number is " + i);
+
+            } else if
+            (i < min || i > max) {
                 System.out.println("Invalid entry, Enter a number between " + min + " and " + max + " :");
-                return scanner.nextInt();
+
             } else {
                 break;
             }
         }
-        return scanner.nextInt();
+        {
+
+        }
+            return i;
     }
-
-
 }
-
 
 
 //    public boolean yesNo() {
