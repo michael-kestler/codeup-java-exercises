@@ -24,44 +24,41 @@ public class Input {
             return false;
         }
     }
+
+
+    public int getInt(int min, int max) {
+        System.out.print("Enter a number between " + min + " and " + max + " :");
+        int i = scanner.nextInt();
+
+            while (i < min || i > max) {
+                    System.out.println("Invalid entry, Enter a number between " + min + " and " + max + " :");
+                    i = scanner.nextInt();
+            }  System.out.println("Your number is " + i);
+            return i;
+    }
+
+
+    public double getDouble(double min, double max) {
+        System.out.print("Enter a decimal number between " + min + " and " + max + " :");
+        double i = scanner.nextDouble();
+
+        while (i < min || i > max) {
+            System.out.println("Invalid entry, Enter a decimal number between " + min + " and " + max + " :");
+            i = scanner.nextDouble();
+        }  System.out.println("Your number is " + i);
+        return i;
+    }
+
+    public double getDouble() {
+        System.out.print("Enter decimal: ");
+        return scanner.nextDouble();
+
+    }
 }
 
-//    public int getInt(int min, int max) {
-//        System.out.print("Enter a number between " + min + " and " + max + " :");
-//        int i = scanner.nextInt();
-//        while (true) {
-//            if (i > min && i < max) {
-//                System.out.println("Your number is " + i);
-//
-//            } else if
-//            (i < min || i > max) {
-//                System.out.println("Invalid entry, Enter a number between " + min + " and " + max + " :");
-//
-//            } else {
-//                break;
-//            }
-//        }
-//        {
-//
-//        }
-//            return i;
-//    }
-//}
 
 
-//    public boolean yesNo() {
-//        return Objects.equals(scanner.nextLine(), "yes");
-//    }
 
-//    public void getInt(int min, int max) {
-//        if (scanner.nextLine() >= min && scanner.nextLine() <= max) {
-//            return scanner.nextLine();
-//        }
-//
-//       public int getInt () {
-//
-//        }
-//
 //        public double getDouble ( double min, double max){
 //
 //        }
