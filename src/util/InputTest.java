@@ -3,7 +3,7 @@ package util;
 import java.util.Scanner;
 
 public class InputTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Input sc1 = new Input();
         Input sc2 = new Input();
@@ -17,8 +17,15 @@ public class InputTest {
         System.out.println(sc4.getDouble(25.22, 49.14));
 //        System.out.println(sc5.getDouble());
 
-
-
+        try {
+            Input.getString() = Integer.parseInt(getString());
+            System.out.println(i);
+        } catch (NumberFormatException nfe) {
+            System.out.println("NumberFormat Exception: invalid input string");
+        }
+        System.out.println("Continuing execution...");
+    }
+}
 
 
 
@@ -37,5 +44,5 @@ public class InputTest {
 
 
 
-    }
-}
+
+
