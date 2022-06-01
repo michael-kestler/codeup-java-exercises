@@ -4,8 +4,12 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+
+import static java.nio.file.StandardOpenOption.APPEND;
 
 public class ContactsManagerRunner {
     public static void main(String[] args) throws IOException {
@@ -36,9 +40,16 @@ public class ContactsManagerRunner {
             Scanner scanner1 = new Scanner(System.in);
             System.out.println("Enter name and phone number:");
             String newContact = scanner1.nextLine();
-            List<String> list =
-                    List.of(newContact);
-            Files.write(pathFileToWrite, list);
+//            List<String> list =
+//                    List.of(newContact);
+            Files.write(pathFileToWrite,
+                    List.of(newContact),
+                    StandardOpenOption.APPEND
+                    );
+            System.out.println("File updated as follows...");
+            Files.lines(pathFileToRead)
+                    .forEach(System.out::println);
+            ;
         } else if (chooseOperation == 3){
             System.out.println("Enter name");
             String searchContact = scanner.nextLine();
