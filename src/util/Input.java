@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Input {
 
+
     //create a private field named scanner
     private Scanner scanner = new Scanner(System.in);
 
@@ -16,6 +17,8 @@ public class Input {
         return scanner.nextLine();
 
     }
+
+
 
 //    public boolean yesNo() {
 //        System.out.print("Enter yes or no: ");
@@ -64,6 +67,8 @@ public class Input {
         System.out.println("Your number is " + i);
         return i;
     }
+
+
 }
 
 //    public double getDouble() {

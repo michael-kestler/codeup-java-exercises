@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class InputTest {
     public static void main(String[] args) {
 
+
+
+
+
         Input sc1 = new Input();
         Input sc2 = new Input();
         Input sc3 = new Input();
@@ -17,13 +21,20 @@ public class InputTest {
         System.out.println(sc4.getDouble(25.22, 49.14));
 //        System.out.println(sc5.getDouble());
 
-        try {
-            Input.getString() = Integer.parseInt(getString());
-            System.out.println(i);
-        } catch (NumberFormatException nfe) {
-            System.out.println("NumberFormat Exception: invalid input string");
-        }
-        System.out.println("Continuing execution...");
+
+
+//        try {
+//             sc3.getInt() = Integer.parseInt(sc1.getString());
+//            System.out.println(sc3.getInt());
+//        } catch (NumberFormatException nfe) {
+//            System.out.println("NumberFormat Exception: invalid input string");
+//        }
+//        System.out.println("Continuing execution...");
+
+
+
+
+
     }
 }
 
