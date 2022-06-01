@@ -30,13 +30,13 @@ public class ContactsManagerRunner {
         System.out.println("3. Search a contact by name.");
         System.out.println("4. Delete an existing contact");
         System.out.println("5. Exit.");
-        System.out.println("(Enter an option 1, 2, 3, 4, or 5):");
+        System.out.println("(Enter an option 1, 2, 3, 4, or 5): ");
         int chooseOperation = scanner.nextInt();
 
-        if (chooseOperation == 1){
+        if (chooseOperation == 1) {
             Files.lines(pathFileToRead)
                     .forEach(System.out::println);
-        } else if (chooseOperation == 2){
+        } else if (chooseOperation == 2) {
             Scanner scanner1 = new Scanner(System.in);
             System.out.println("Enter name and phone number:");
             String newContact = scanner1.nextLine();
@@ -45,19 +45,35 @@ public class ContactsManagerRunner {
             Files.write(pathFileToWrite,
                     List.of(newContact),
                     StandardOpenOption.APPEND
-                    );
+            );
             System.out.println("File updated as follows...");
             Files.lines(pathFileToRead)
                     .forEach(System.out::println);
             ;
-        } else if (chooseOperation == 3){
+        } else if (chooseOperation == 3) {
+            Scanner scanner2 = new Scanner(System.in);
             System.out.println("Enter name");
-            String searchContact = scanner.nextLine();
+            String searchContact = scanner2.nextLine();
+            FileSearch fileSearch = new FileSearch();
+            fileSearch.parseFile("/Users/michaelkestler/IdeaProjects/codeup-java-exercises/src/Contacts/contacts.txt"
+                    , searchContact);
+//            System.out.println(fileSearch.parseFile("/Users/michaelkestler/IdeaProjects/codeup-java-exercises/src/Contacts/contacts.txt"
+//                    , searchContact));
+
+
+//            Scanner scannedFile = new Scanner(pathFileToRead);
+//            while (scannedFile.hasNext()) {
+//                String search = scannedFile.next();
+//                if (search.contains(searchContact)) {
+//                    System.out.println("Found: " + search);
+////                } else {
+//                    System.out.println("No data found.");
+
+                }
+
+
+            }
+
+
         }
 
-
-
-    }
-
-
-}
