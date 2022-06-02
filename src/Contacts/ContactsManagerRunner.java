@@ -1,13 +1,17 @@
 package Contacts;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 import static java.nio.file.StandardOpenOption.APPEND;
 
@@ -43,6 +47,16 @@ public class ContactsManagerRunner {
             System.out.format("+-----------------+-----------------+%n");
             Files.lines(pathFileToRead)
                     .forEach(System.out::println);
+//            Scanner s = new Scanner(new File("/Users/michaelkestler/IdeaProjects/codeup-java-exercises/src/Contacts/contacts.txt"));
+//            ArrayList<String> list = new ArrayList<>();
+//            while (s.hasNext()){
+//                list.add(s.next());
+//            }
+//            s.close();
+
+//            List<String> list = Files.readAllLines(new File("/Users/michaelkestler/IdeaProjects/codeup-java-exercises" +
+//                    "/src/Contacts/contacts.txt").toPath(), Charset.defaultCharset() );
+//            System.out.println(list);
 //            for (int i = 0; i < 5; i++) {
 //                System.out.format(leftAlignFormat, "some data" + i, i * i);
 //            }
@@ -70,14 +84,24 @@ public class ContactsManagerRunner {
             FileSearch fileSearch = new FileSearch();
             fileSearch.parseFile("/Users/michaelkestler/IdeaProjects/codeup-java-exercises/src/Contacts/contacts.txt"
                     , searchContact);
-        } else {
-                    System.out.println("No data found.");
+        }else if (chooseOperation == 4){
+            Scanner scanner3 = new Scanner(System.in);
+            System.out.println("Enter name");
+            String stringToDelete = scanner3.nextLine();
+            File file = new File("/Users/michaelkestler/IdeaProjects/codeup-java-exercises/src/Contacts/contacts.txt");
+            List<String> out = Files.lines(file.toPath())
+                    .filter(line -> !line.contains(stringToDelete))
+                    .collect(Collectors.toList());
+            Files.write(file.toPath(), out, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING);
+                            }
+            }
+
 
                 }
 
 
-            }
 
 
-        }
+
+
 
