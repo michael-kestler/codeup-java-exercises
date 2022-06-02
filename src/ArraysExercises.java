@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArraysExercises {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
@@ -17,9 +19,35 @@ public class ArraysExercises {
         person[1] = "Cal Norton Jr";
         person[2] = "Jean Girard";
 
-        for (int i = 0; i < person.length; i += 1) {
-            System.out.println(person[i]);
+        for (String s : person) {
+            System.out.println(s);
         }
+
+
+
+        int[] marks  = {100, 99, 95, 96, 100};
+        //enhanced for loop is same as the for loop with variable i
+        for(int mark : marks){
+            System.out.println(mark);
+
+            for(int i = 0; i<marks.length; i++){
+                System.out.println(marks[i]);
+            }
+        }
+
+        int[] grades = new int[5];
+        Arrays.fill(grades, 100);
+        System.out.println(Arrays.toString(grades));
+
+        int[] array1 = {1, 2, 3};
+
+        int[] array2 = {1, 2, 3};
+        System.out.println(Arrays.toString(array2));
+
+//        Arrays.equals(array1, array2); - does not work. don't use.
+
+
+
 
 
         }
@@ -43,6 +71,9 @@ public class ArraysExercises {
 //        String [] copyTo = arr2;
 //
 //        System.out.print(addPerson[]);
+
+
+
 
 
 

@@ -34,15 +34,18 @@ public class ContactsManagerRunner {
         int chooseOperation = scanner.nextInt();
 //        display contact
         if (chooseOperation == 1) {
-            Files.lines(pathFileToRead)
-                    .forEach(System.out::println);
-            String leftAlignFormat = "| %-15s | %-15d |%n";
+//            Files.lines(pathFileToRead)
+//                    .forEach(System.out::println);
+//            String leftAlignFormat = "| %-15s | %-15d |%n";
 
             System.out.format("+-----------------+-----------------+%n");
             System.out.format("| Name            | Phone Number    |%n");
             System.out.format("+-----------------+-----------------+%n");
             Files.lines(pathFileToRead)
                     .forEach(System.out::println);
+//            for (int i = 0; i < 5; i++) {
+//                System.out.format(leftAlignFormat, "some data" + i, i * i);
+//            }
             System.out.format("+-----------------+------------------+%n");
 
             //user can add a contact
@@ -67,17 +70,8 @@ public class ContactsManagerRunner {
             FileSearch fileSearch = new FileSearch();
             fileSearch.parseFile("/Users/michaelkestler/IdeaProjects/codeup-java-exercises/src/Contacts/contacts.txt"
                     , searchContact);
-//            System.out.println(fileSearch.parseFile("/Users/michaelkestler/IdeaProjects/codeup-java-exercises/src/Contacts/contacts.txt"
-//                    , searchContact));
-
-
-//            Scanner scannedFile = new Scanner(pathFileToRead);
-//            while (scannedFile.hasNext()) {
-//                String search = scannedFile.next();
-//                if (search.contains(searchContact)) {
-//                    System.out.println("Found: " + search);
-////                } else {
-//                    System.out.println("No data found.");
+        } else {
+                    System.out.println("No data found.");
 
                 }
 
