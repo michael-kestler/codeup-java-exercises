@@ -1,6 +1,5 @@
 package carShop;
 
 public interface Describable {
-    public void describe();
-
+   String describe(Details details);
 }

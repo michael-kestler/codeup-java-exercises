@@ -6,20 +6,20 @@ public class Customer implements Describable {
     private String lastName;
 
     //constructor
-//    public Customer(String firstName, String lastName){
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//    }
+    public Customer(String firstName, String lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
 //    public Customer(){
 //        this.firstName = firstName;
 //        this.lastName = lastName;
 //    }
 
-//    @Override
-    public void describe(String details) {
-        System.out.println("Hey there " + firstName + lastName +
-                ", it looks like your car is ready to go");
+    @Override
+    public String describe(Details details) {
+        return "Hey there " + firstName + lastName +
+                ", it looks like your " + details + "is ready to go";
     }
 
 
