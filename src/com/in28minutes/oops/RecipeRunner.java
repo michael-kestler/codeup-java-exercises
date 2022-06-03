@@ -6,5 +6,8 @@ public class RecipeRunner {
         Recipe1 recipe  = new Recipe1();
         recipe.execute();
 
+        RecipeWithMicrowave recipeWithMicrowave = new RecipeWithMicrowave();
+        recipeWithMicrowave.execute();
+
     }
 }
