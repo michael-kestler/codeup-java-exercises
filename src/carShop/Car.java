@@ -1,6 +1,6 @@
 package carShop;
 
-public class Car {
+public class Car extends Customer{
     //fields that cannot be accessed outside of Car
     private String model;
     private String make;
@@ -8,7 +8,8 @@ public class Car {
     private int year;
 
     //constructor that sets model, make, color, and year
-    public Car(String model, String make, String color, int year) {
+    public Car(String model, String make, String color, int year, String firstName, String lastName) {
+        super(firstName, lastName);
         this.model = model;
         this.make = make;
         this.color = color;

@@ -3,11 +3,15 @@ package carShop;
 public class DealershipApp {
     public static void main(String[] args) {
 
-    Details details = new Car("Accord", "Honda", "Black", 1999);
-    Customer customer = new Customer("Larry", "Wile");
+    Car car = new Car("Accord", "Honda", "black", 1999, "Larry", "Wile");
 
-//       details.describe();
-    };
 
+        System.out.println(car.describe(String.format("%s, %s, %s, %s", car.getColor(), car.getYear(),
+                car.getMake(),
+                car.getModel())));
     }
 }
+
+
+
+
