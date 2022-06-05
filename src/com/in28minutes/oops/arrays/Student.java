@@ -1,4 +1,4 @@
-package com.in28minutes.oops;
+package com.in28minutes.oops.arrays;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -8,7 +8,7 @@ public class Student {
     private String name;
     private int[] grades;
 
-    public Student(String name, int[] grades) {
+    public Student(String name, int... grades) {
         this.name = name;
         this.grades = grades;
     }

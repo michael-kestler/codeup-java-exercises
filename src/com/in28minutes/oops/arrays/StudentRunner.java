@@ -1,12 +1,18 @@
-package com.in28minutes.oops;
+package com.in28minutes.oops.arrays;
+
+import com.in28minutes.oops.arrays.Student;
 
 import java.math.BigDecimal;
 
 public class StudentRunner {
     public static void main(String[] args) {
 
-        int[] grades = {97, 98, 100};
-        Student student = new Student ("Spanky", grades);
+
+        Student student = new Student ("Spanky", 97, 98, 100);
+
+        Student student1 = new Student("Adam", 97, 98);
+
+        Student student2 = new Student("Eve", 97, 98, 90, 98);
 
     int number = student.getNumberOfGrades();
         System.out.println("number of grades is " + number);
