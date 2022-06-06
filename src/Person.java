@@ -22,9 +22,19 @@ public class Person {
         this.name = name;
     }
 
+
+
+
+
     public static void main(String[] args){
         Person person = new Person("Larry");
         person.sayHello();
+
+
+        String[] personArray;
+        personArray = new String[3];
+
+
 
 
 //        Person person1 = new Person("John");
