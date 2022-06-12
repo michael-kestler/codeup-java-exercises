@@ -6,13 +6,13 @@ public class Input {
 
 
     //create a private field named scanner
-    private Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
 
     public Input() {
         this.scanner = scanner;
     }
 
-    public String getString() {
+    public static String getString() {
         System.out.print("Enter number: ");
         return scanner.nextLine();
 
@@ -29,7 +29,7 @@ public class Input {
 //        }
 //    }
 
-    public int getInt(int min, int max) {
+    public static int getInt(int min, int max) {
 //        System.out.print("Enter a number between " + min + " and " + max + " :");
         int i = Integer.parseInt(getString());
 

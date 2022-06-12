@@ -105,4 +105,11 @@ public class MoviesArray {
             new Movie("Yankee Doodle Dandy", "musical")
         };
     }
+    public static void fullList(Movie[] name) {
+        for (Movie movie : name) {
+            System.out.println(movie.getName());
+        }
+
+    }
+
 }

@@ -24,4 +24,6 @@ public class Movie {
     public void setCategory(String category) {
         this.category = category;
     }
+
+
 }
