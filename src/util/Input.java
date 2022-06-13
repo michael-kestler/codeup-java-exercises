@@ -90,7 +90,7 @@ public class Input {
 //    }
 
     public double getDouble(double min, double max) {
-        int i = 1;
+        double i = 1.0;
         do {
             System.out.print("Enter a decimal number between " + min + " and " + max + " :");
             String s = getString();
