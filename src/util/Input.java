@@ -30,17 +30,39 @@ public class Input {
 //    }
 
     public static int getInt(int min, int max) {
-//        System.out.print("Enter a number between " + min + " and " + max + " :");
+        System.out.print("Enter a number between " + min + " and " + max + " :");
         int i = Integer.parseInt(getString());
 
 
         while (i < min || i > max) {
-//            System.out.println("Invalid entry, Enter a number between " + min + " and " + max + " :");
+            System.out.println("Invalid entry, Enter a number between " + min + " and " + max + " :");
             i = Integer.parseInt(getString());
         }
         System.out.println("Goodbye");
         return 0;
     }
+
+//exceptions and error handling
+//    public static int getInt(int min, int max){
+//        int i = 1;
+//        do{
+//            System.out.print("Enter a number between " + min + " and " + max + " :");
+//            String s = getString();
+//
+//            try{
+//                i = Integer.parseInt(s);
+//            } catch (NumberFormatException nfe) {
+//                System.out.println(nfe.getMessage() + " is not an integer");
+//                getInt(min, max);
+//            } catch (Exception e) {
+//                System.out.println(e.getMessage() + " is not a valid input");
+//                getInt(min, max);
+//            }
+//        }  while(i < min || i > max);
+//        return i;
+//
+//
+//    }
 
 
 //    public int getInt(int min, int max) {
