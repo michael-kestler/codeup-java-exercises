@@ -38,8 +38,8 @@ public class Input {
 //            System.out.println("Invalid entry, Enter a number between " + min + " and " + max + " :");
             i = Integer.parseInt(getString());
         }
-        System.out.println("Your number is " + i);
-        return i;
+        System.out.println("Goodbye");
+        return 0;
     }
 
 

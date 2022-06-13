@@ -109,7 +109,15 @@ public class MoviesArray {
         for (Movie movie : name) {
             System.out.println(movie.getName());
         }
+    }
+        public static void listByCategory(Movie[] movies, String category) {
+            for (Movie movie : movies) {
+                if (movie.getCategory().equals(category)) {
+                    System.out.println(movie.getName());
+                }
+            }
+        }
 
     }
 
-}
+
