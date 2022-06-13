@@ -19,7 +19,6 @@ public class Input {
     }
 
 
-
 //    public boolean yesNo() {
 //        System.out.print("Enter yes or no: ");
 //        if (scanner.nextLine().equals("yes")) {
@@ -60,7 +59,7 @@ public class Input {
 //            }
 //        }  while(i < min || i > max);
 //        return i;
-//
+
 //
 //    }
 
@@ -78,20 +77,46 @@ public class Input {
 //    }
 
 
+//    public double getDouble(double min, double max) {
+////        System.out.print("Enter a decimal number between " + min + " and " + max + " :");
+//        double i = Double.parseDouble(getString());
+//
+//        while (i < min || i > max) {
+////            System.out.println("Invalid entry, Enter a decimal number between " + min + " and " + max + " :");
+//            i = Double.parseDouble(getString());
+//        }
+//        System.out.println("Your number is " + i);
+//        return i;
+//    }
+
     public double getDouble(double min, double max) {
-//        System.out.print("Enter a decimal number between " + min + " and " + max + " :");
-        double i = Double.parseDouble(getString());
+        int i = 1;
+        do {
+            System.out.print("Enter a decimal number between " + min + " and " + max + " :");
+            String s = getString();
 
-        while (i < min || i > max) {
-//            System.out.println("Invalid entry, Enter a decimal number between " + min + " and " + max + " :");
-            i = Double.parseDouble(getString());
-        }
-        System.out.println("Your number is " + i);
+            try {
+                i = Integer.parseInt(s);
+            } catch (NumberFormatException nfe) {
+                System.out.println(nfe.getMessage() + " is not a decimal number");
+                getDouble(min, max);
+            } catch (Exception e) {
+                System.out.println(e.getMessage() + " is not a valid input");
+                getDouble(min, max);
+            }
+        } while (i < min || i > max);
         return i;
+
+
     }
-
-
 }
+
+
+
+
+
+
+
 
 //    public double getDouble() {
 //        System.out.print("Enter decimal: ");
