@@ -2,8 +2,7 @@ package com.in28minutes.oops;
 
 import org.w3c.dom.ls.LSOutput;
 
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Notes {
     public static void main(String[] args) {
@@ -22,6 +21,9 @@ public class Notes {
         while(wordsIterator.hasNext()) {
             System.out.println(wordsIterator.next());
         }
+
+       Set<Integer> numbers = new LinkedHashSet<>();
+        System.out.println(numbers.add(765432));
 
     }
 
