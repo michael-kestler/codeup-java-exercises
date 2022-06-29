@@ -24,6 +24,17 @@ public class Solution {
             System.out.println(inputString);
 
 
+            double d1;
+            double d2;
+
+            d1 = 7.22;
+            d2 = 3.14;
+
+            System.out.println(Math.floor(d1 + d2));
+
+
+            System.out.println(String.format("%.1f", d1+d2));
+
         }
     }
 
