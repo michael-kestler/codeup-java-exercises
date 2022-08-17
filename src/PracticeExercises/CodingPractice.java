@@ -1,5 +1,9 @@
 package PracticeExercises;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Scanner;
+
 public class CodingPractice {
 
     public static void main(String[] args) {
@@ -18,10 +22,22 @@ public class CodingPractice {
         }
         System.out.println("Reversed word: " + rstr);
 
-    }
+
 
     //Reversing string based on user input
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter a word: ");
+    String Str = scanner.nextLine();
+    char[] arr = Str.toCharArray();
 
+    String rev = "";
+
+    for(int i = Str.length() - 1; i >= 0; i -- ){
+    rev = rev + Str.charAt(i);
+    }
+        System.out.println(rev);
+
+    }
 
 
 
