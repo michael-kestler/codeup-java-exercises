@@ -1,10 +1,8 @@
 package PracticeExercises;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
-public class CodingPractice {
+public class ReverseString {
 
     public static void main(String[] args) {
         //Reverse a String
@@ -28,7 +26,7 @@ public class CodingPractice {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Enter a word: ");
     String Str = scanner.nextLine();
-    char[] arr = Str.toCharArray();
+//    char[] arr = Str.toCharArray();
 
     String rev = "";
 
