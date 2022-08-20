@@ -17,7 +17,7 @@ public class Palindrome {
 
 
         }
-        if(Str.equals(rev))
+        if(Str.equalsIgnoreCase(rev))
             System.out.println(Str + " is a palindrome");
         else
             System.out.println(Str + " is not a palindrome");
