@@ -1,14 +1,22 @@
 package PracticeExercises;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
+
+
 
 public class MatchingCharacters {
     public static void main(String[] args) {
         //get matching characterss in a string
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a word: ");
+        String text = scanner.nextLine();
+
         HashMap<Character, Integer> mp = new HashMap<>();
-        String text = null;
-        
+
+
         for(int i = 0; i<text.length(); i++) {
             char ch = text.charAt(i);
             if(mp.containsKey(ch)){
@@ -18,8 +26,8 @@ public class MatchingCharacters {
                 mp.put(ch, 1);
             }
         }
-        
-        Set<Character> charct = map.keySet();
+
+        Set<Character> charct = mp.keySet();
 
         for(Character ch: charct){
             int c = mp.get(ch);
@@ -27,5 +35,9 @@ public class MatchingCharacters {
                 System.out.println(ch + " - " + c);
             }
         }
+
+
+
+
     }
 }
