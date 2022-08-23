@@ -14,9 +14,14 @@ public class MatchingCharacters {
         System.out.println("Enter a word: ");
         String text = scanner.nextLine();
 
+
+        //creating hashmap chontaining char as a key and occurrences as a value
         HashMap<Character, Integer> mp = new HashMap<>();
 
-
+//        Loop the string, character by character, and verify if that character
+//        of the string exists in the hash map or not.
+//        if the result is true, the counter for the character in the hash map
+//        is increased or else then put a count as 1.
         for(int i = 0; i<text.length(); i++) {
             char ch = text.charAt(i);
             if(mp.containsKey(ch)){
@@ -26,6 +31,9 @@ public class MatchingCharacters {
                 mp.put(ch, 1);
             }
         }
+
+//        Once the loop ends, then the Hash map is traversed and print the characters
+//        with more than 1 count.
 
         Set<Character> charct = mp.keySet();
 
